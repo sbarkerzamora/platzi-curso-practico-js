@@ -23,6 +23,14 @@ function areaTriangulo(base,altura){
   return (base * altura) / 2;
 };
 
+function alturaTrianguloIsoceles(lado1,lado2,base){
+  if lado1 === lado2 {
+    return (Math.sqrt( (lado1 * lado1) - ((base * base) / 2) );
+  } else {
+    alert('Los lados tienen que ser iguales, favor intentar de nuevo');
+  }
+};
+
 console.groupEnd();
 
 //Codigo del circulo
@@ -112,4 +120,17 @@ function calcularAreaCirculo(){
 
   const area = areaCirculo(radio);
   alert(area);
+};
+
+function calcularAlturaTrianguloIsoceles(){
+  const inputLado1 = document.getElementById('InputTrianguloLado1Altura');
+  const inputLado2 = document.getElementById('InputTrianguloLado2Altura');
+  const inputBase = document.getElementById('InputTrianguloBaseAltura');
+
+  const lado1 = inputLado1.value;
+  const lado2 = inputLado2.value;
+  const base = inputBase.value;
+
+  const alturaIsoceles = alturaTrianguloIsoceles(lado1,lado2,base);
+  alert(alturaIsoceles)
 };
