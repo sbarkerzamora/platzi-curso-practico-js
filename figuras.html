@@ -83,21 +83,21 @@
 
     </div>
 
-    <div class="col">  
+    <div class="col">
 
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">Calcula el area de un triangulo</h5>
+            <h5 class="card-title">Calcula el diametro, circunferencia y area de un circulo</h5>
 
             <form>
               <div class="mb-3">
-                <label for="InputTrianguloBaseArea" class="form-label">Escribe la base</label>
-                <input type="number" class="form-control" id="InputTrianguloBaseArea" >
-                <label for="InputTrianguloAltura" class="form-label">Escribe la altura</label>
-                <input type="number" class="form-control" id="InputTrianguloAltura" >
+                <label for="InputCirculoRadio" class="form-label">Escribe el radio</label>
+                <input type="number" class="form-control" id="InputCirculoRadio" >
               </div>
               <div class="d-grid gap-2 p-4">
-                <button class="btn btn-primary" type="button" onclick="calcularAreaTriangulo()">Calcular area</button>
+                <button class="btn btn-primary" type="button" onclick="calcularDiametroCirculo()">Calcular diametro</button>
+                <button class="btn btn-primary" type="button" onclick="calcularCircunferenciaCirculo()">Calcular circunferencia</button>
+                <button class="btn btn-primary" type="button" onclick="calcularAreaCirculo()">Calcular area</button>
               </div>
             </form>
 
@@ -105,6 +105,29 @@
         </div>
 
       </div>
+
+      <div class="col">
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Calcula el area de un triangulo</h5>
+
+              <form>
+                <div class="mb-3">
+                  <label for="InputTrianguloBaseArea" class="form-label">Escribe la base</label>
+                  <input type="number" class="form-control" id="InputTrianguloBaseArea" >
+                  <label for="InputTrianguloAltura" class="form-label">Escribe la altura</label>
+                  <input type="number" class="form-control" id="InputTrianguloAltura" >
+                </div>
+                <div class="d-grid gap-2 p-4">
+                  <button class="btn btn-primary" type="button" onclick="calcularAreaTriangulo()">Calcular area</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
 
   </div>
 </div>

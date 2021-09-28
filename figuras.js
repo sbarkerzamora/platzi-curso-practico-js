@@ -89,3 +89,27 @@ function calcularAreaTriangulo(){
   const area = areaTriangulo(valueBase, valueAltura);
   alert(area);
 };
+
+function calcularDiametroCirculo(){
+  const inputRadio = document.getElementById('InputCirculoRadio');
+  const radio = inputRadio.value;
+
+  const diametro = diametroCirculo(radio);
+  alert(diametro);
+};
+
+function calcularCircunferenciaCirculo(){
+  const inputRadio = document.getElementById('InputCirculoRadio');
+  const radio = inputRadio.value;
+
+  const circunferencia = perimetroCirculo(radio);
+  alert(circunferencia);
+};
+
+function calcularAreaCirculo(){
+  const inputRadio = document.getElementById('InputCirculoRadio');
+  const radio = inputRadio.value;
+  
+  const radio = areaCirculo(radio);
+  alert(radio);
+};
