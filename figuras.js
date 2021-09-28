@@ -24,11 +24,7 @@ function areaTriangulo(base,altura){
 };
 
 function alturaTrianguloIsoceles(lado1,lado2,base){
-  if (lado1 === lado2) {
-    return (Math.sqrt( (lado1 * lado1) - ((base * base) / 2)));
-  } else {
-    alert('Los lados tienen que ser iguales, favor intentar de nuevo');
-  }
+    return (Math.sqrt( (lado1 * lado2) - ((base * base) / 2)));
 };
 
 console.groupEnd();
@@ -131,6 +127,10 @@ function calcularAlturaTrianguloIsoceles(){
   const lado2 = inputLado2.value;
   const base = inputBase.value;
 
-  const alturaIsoceles = alturaTrianguloIsoceles(lado1,lado2,base);
-  alert(alturaIsoceles)
+  if (lado1 === lado2){
+    const alturaIsoceles = alturaTrianguloIsoceles(lado1,lado2,base);
+    alert(alturaIsoceles);
+  } else {
+    alert('Los lados tienen que ser iguales para que pueda dar una respuesta, intentar de nuevo');
+  }
 };
