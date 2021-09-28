@@ -1,9 +1,6 @@
 //Codigo del cuadrado
 console.group('Cuadrados');
 
-const ladoCuadrado = 5;
-console.log('Los lados del cuadrado miden: ' + ladoCuadrado + ' cm');
-
 function perimetroCuadrado(lado){
   return lado * 4;
 };
@@ -32,10 +29,6 @@ console.groupEnd();
 
 console.group('Circulos');
 
-// Radio
-// const radioCirculo = 4;
-// console.log('El radio del circulo es ' + radioCirculo + ' cm');
-
 // Diametro
 function diametroCirculo(radio){
   return radio * 2;
@@ -43,7 +36,6 @@ function diametroCirculo(radio){
 
 // PI
 const PI = Math.PI;
-console.log('PI es ' + PI + ' cm');
 
 // Circunferencia
 function perimetroCirculo(radio){
