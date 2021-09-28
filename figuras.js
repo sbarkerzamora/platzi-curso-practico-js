@@ -78,3 +78,14 @@ function calcularPerimetroTriangulo(){
   const perimetro = perimetroTriangulo(valueLado1, valueLado2, valueBase);
   alert(perimetro);
 };
+
+function calcularAreaTriangulo(){
+  const inputBase = document.getElementById('InputTrianguloBase');
+  const inputAltura = document.getElementById('inputTrianguloAltura');
+
+  const valueBase = inputBase.value;
+  const valueAltura = inputAltura.value;
+
+  const area = areaTriangulo(valueBase, valueAltura);
+  alert(area);
+};
