@@ -25,7 +25,7 @@ function areaTriangulo(base,altura){
 
 function alturaTrianguloIsoceles(lado1,lado2,base){
   if (lado1 === lado2) {
-    return (Math.sqrt( (lado1 * lado1) - ((base * base) / 2) )
+    return (Math.sqrt( (lado1 * lado1) - ((base * base) / 2) );
   } else {
     alert('Los lados tienen que ser iguales, favor intentar de nuevo');
   }
