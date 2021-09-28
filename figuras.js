@@ -49,3 +49,13 @@ function areaCirculo(radio){
 };
 
 console.groupEnd();
+
+// Aqui interactuamos con el html
+
+function calcularPerimetroCuadrado() {
+
+}
+
+function calcularAreaCuadrado() {
+
+}
