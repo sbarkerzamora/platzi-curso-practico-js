@@ -109,7 +109,7 @@ function calcularCircunferenciaCirculo(){
 function calcularAreaCirculo(){
   const inputRadio = document.getElementById('InputCirculoRadio');
   const radio = inputRadio.value;
-  
-  const radio = areaCirculo(radio);
-  alert(radio);
+
+  const area = areaCirculo(radio);
+  alert(area);
 };
