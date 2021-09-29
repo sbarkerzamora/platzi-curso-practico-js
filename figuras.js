@@ -127,7 +127,7 @@ function calcularAlturaTrianguloIsoceles(){
   const lado2 = inputLado2.value;
   const base = inputBase.value;
 
-  if (lado1 === lado2){
+  if (lado1 === lado2 && lado1 != base){
     const alturaIsoceles = alturaTrianguloIsoceles(lado1,lado2,base);
     alert(alturaIsoceles);
   } else {
