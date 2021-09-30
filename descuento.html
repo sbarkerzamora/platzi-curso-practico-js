@@ -43,13 +43,19 @@
 
             <form>
               <div class="mb-3">
-                <label for="" class="form-label">Escribe el radio</label>
-                <input type="number" class="form-control" id="" >
+                <label for="InputPrice" class="form-label">Escribe el precio de tu producto</label>
+                <input type="number" class="form-control" id="InputPrice" >
+
+                <label for="InputDiscount" class="form-label">Escribe el descuento</label>
+                <input type="number" class="form-control" id="InputDiscount" >
+
               </div>
               <div class="d-grid gap-2 p-4">
-                <button class="btn btn-primary" type="button" onclick="">Calcular descuento</button>
+                <button class="btn btn-primary" type="button" onclick="onClickPriceDiscount()">Calcular descuento</button>
               </div>
             </form>
+
+            <p id="resultPrice"></p>
 
           </div>
         </div>
